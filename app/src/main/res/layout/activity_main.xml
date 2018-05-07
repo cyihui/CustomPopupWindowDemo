@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.cyh.custompopupwindow.MainActivity">
+
+    <TextView
+        android:id="@+id/tv_show"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:text="SHOW" />
+
+    <TextView
+        android:id="@+id/tv_show_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="SHOW BOTTOM" />
+
+
+    <LinearLayout
+        android:id="@+id/layout_options"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VERTICAL POSITION"
+            android:textColor="@color/colorAccent"
+            />
+
+        <Spinner
+            android:id="@+id/spinner_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:padding="8dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HORIZONTAL POSITION"
+            android:textColor="@color/colorAccent"
+            />
+
+        <Spinner
+            android:id="@+id/spinner_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:padding="8dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WIDTH"
+            android:textColor="@color/colorAccent"
+            />
+
+        <Spinner
+            android:id="@+id/spinner_width"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:padding="8dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HEIGHT"
+            android:textColor="@color/colorAccent"
+            />
+
+        <Spinner
+            android:id="@+id/spinner_height"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:padding="8dp"
+            />
+
+        <CheckBox
+            android:id="@+id/checkbox_fit_in_screen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fit In Screen"
+            android:checked="true"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
